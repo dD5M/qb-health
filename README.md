@@ -10,7 +10,7 @@ http://discord.daddydubz.com
 -Load into your resources folder
 -Follow the instructions below to enable qb-health bed spawning functionality.
 
-# Identify the following function in visn_are/helpers/c_events
+# Identify the following Event in visn_are/helpers/c_events
 
     RegisterNetEvent(ENUM_EVENT_TYPES.EVENT_RESPAWN_PLAYER, function(authToken)
         if authToken ~= TempAuthToken then return end
@@ -40,7 +40,7 @@ http://discord.daddydubz.com
     end)
 
 
-# Replace the function above with this
+# Replace the Event above with this
 
     RegisterNetEvent(ENUM_EVENT_TYPES.EVENT_RESPAWN_PLAYER, function(authToken)
         if authToken ~= TempAuthToken then return end
