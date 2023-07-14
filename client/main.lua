@@ -41,10 +41,9 @@ RegisterNetEvent('hospital:client:Revive', function()
         SetEntityInvincible(ped, true)
         CanLeaveBed = true
     end
-    TriggerClientEvent("visn_are:resetHealthBuffer", ped)
     TriggerServerEvent("hospital:server:resetHungerThirst")
-    -- SetEntityMaxHealth(ped, 200)
-    -- SetEntityHealth(ped, 200)
+    SetEntityMaxHealth(ped, 200)
+    SetEntityHealth(ped, 200)
     ClearPedBloodDamage(ped)
     SetPlayerSprint(cache.playerId, true)
     ResetPedMovementClipset(ped, 0.0)

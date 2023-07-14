@@ -96,6 +96,7 @@ RegisterNetEvent('hospital:server:SendToBed', function(bedId, isRevive)
 	if GetInvokingResource() then return end
 	local src = source
 	local player = QBCore.Functions.GetPlayer(src)
+	TriggerClientEvent("visn_are:resetHealthBuffer", src)
 	TriggerClientEvent('hospital:client:SendToBed', src, bedId, Config.Locations.beds[bedId], isRevive)
 	TriggerClientEvent('hospital:client:SetBed', -1, "beds", bedId, true)
 	TriggerClientEvent('hospital:client:Revive', src)
