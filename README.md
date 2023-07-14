@@ -1,3 +1,6 @@
+#Discord
+http://discord.daddydubz.com
+
 # Bed spawn/revive and other functions for use with visn_are Advanced Roleplay Environment
 
 
